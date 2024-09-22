@@ -1,18 +1,20 @@
 * {
   --color-main-bg: #171821;
   --color-main-fg: #21222d;
+  --color-main-hover: #1c1d27;
   --color-selection: #aadfd8;
   --color-outline: #e8e8e8;
   --color-border: #2c2d33;
   --color-text-heading: #fff;
   --color-text-heading-secondary: #84888c;
   --color-text-name: #e8e8e8;
-  --color-text-nav: #75868c;
-  --color-text-nav-inactive: #4f5057;
+  --color-text-nav: rgb(135, 136, 140);
+  --color-text-nav-inactive: rgb(135, 136, 140, .9);
 
   box-sizing: border-box;
   color: var(--color-text-name);
   font-family: Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
