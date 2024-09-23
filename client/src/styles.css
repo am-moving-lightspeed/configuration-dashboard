@@ -9,10 +9,9 @@
   --color-text-heading-secondary: #84888c;
   --color-text-name: #e8e8e8;
   --color-text-nav: rgb(135, 136, 140);
-  --color-text-nav-inactive: rgb(135, 136, 140, .9);
+  --color-text-nav-inactive: rgb(135, 136, 140, 0.9);
 
   box-sizing: border-box;
-  color: var(--color-text-name);
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
 }

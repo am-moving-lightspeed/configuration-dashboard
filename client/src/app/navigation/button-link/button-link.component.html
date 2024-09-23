@@ -1,1 +1,4 @@
-<p>button-link works!</p>
+<a [href]="link()">
+  <ng-content select="app-svg-icon" />
+  <span>{{ text() }}</span>
+</a>
