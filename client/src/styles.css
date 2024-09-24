@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  --color-main-bg: #171821;
+  --color-main-fg: #21222d;
+  --color-main-hover: #1c1d27;
+  --color-selection: #aadfd8;
+  --color-selection-hover: #75cabe;
+  --color-outline: #e8e8e8;
+  --color-border: #2c2d33;
+  --color-text-heading: #fff;
+  --color-text-heading-secondary: #84888c;
+  --color-text-name: #e8e8e8;
+  --color-text-nav: rgb(135, 136, 140);
+  --color-text-nav-inactive: rgb(135, 136, 140, 0.9);
+
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-main-bg);
+}
