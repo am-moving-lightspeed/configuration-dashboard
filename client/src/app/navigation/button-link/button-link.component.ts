@@ -1,6 +1,8 @@
-import { Component, input } from '@angular/core';
+import { Component, computed, inject, input } from '@angular/core';
 
 import { SvgIconComponent } from '../../shared/svg-icon/svg-icon.component';
+import { NavigationService } from '../navigation.service';
+import { NavigationOption } from '../navigation.model';
 
 @Component({
   selector: 'app-button-link',
@@ -10,6 +12,14 @@ import { SvgIconComponent } from '../../shared/svg-icon/svg-icon.component';
   styleUrl: './button-link.component.css'
 })
 export class ButtonLinkComponent {
-  text = input.required<string>();
+  id = input.required<NavigationOption>();
   link = input.required<string>();
+
+  selected = computed(() => this.navigationService.isSelected(this.id()));
+
+  private readonly navigationService = inject(NavigationService);
+
+  select() {
+    this.navigationService.select(this.id());
+  }
 }

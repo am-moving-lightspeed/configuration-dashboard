@@ -8,19 +8,25 @@ a {
   border-radius: 6px;
 
   color: var(--color-text-nav);
+  fill-rule: evenodd;
   font-weight: 500;
   text-decoration: none;
+  transition: ease-out 0.2s background-color;
 }
 
 a span {
   margin-left: 8px;
 }
 
-:host[selected] a {
+a:hover {
+  background-color: var(--color-main-hover);
+}
+
+a[selected] {
+  color: var(--color-main-bg);
   background-color: var(--color-selection);
 }
 
-:host[selected] a span,
-:host[selected]::ng-deep a app-svg-icon {
-  color: var(--color-main-bg);
+a[selected]:hover {
+  background-color: var(--color-selection-hover);
 }
