@@ -12,7 +12,9 @@ import { Component, computed, input } from '@angular/core';
 })
 export class SvgIconComponent {
   name = input.required<string>();
-  path = computed(() => `/svg/nav/${this.name()}.svg#${this.name()}`);
+  subPath = input('', { transform: subPath => (subPath ? `${subPath}/` : '') });
   width = input('1rem');
   height = input('1rem');
+
+  path = computed(() => `/svg/${this.subPath()}${this.name()}.svg#${this.name()}`);
 }

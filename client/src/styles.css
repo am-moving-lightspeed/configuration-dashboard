@@ -8,9 +8,12 @@
   --color-border: #2c2d33;
   --color-text-heading: #fff;
   --color-text-heading-secondary: #84888c;
+  --color-text-input: #d2d2d2;
   --color-text-name: #e8e8e8;
   --color-text-nav: rgb(135, 136, 140);
   --color-text-nav-inactive: rgb(135, 136, 140, 0.9);
+  --color-search-bar-hover: #2c2d33;
+  --color-notification-counter: #e61647;
 
   box-sizing: border-box;
   font-family: Inter, sans-serif;
