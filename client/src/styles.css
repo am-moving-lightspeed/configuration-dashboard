@@ -14,6 +14,10 @@
   --color-text-nav-inactive: rgb(135, 136, 140, 0.9);
   --color-search-bar-hover: #2c2d33;
   --color-notification-counter: #e61647;
+  --color-misc-orange: #fdb763;
+  --color-misc-crystal: #aadfd8;
+  --color-misc-blue: #24a6e3;
+  --color-misc-pink: #e0bcdd;
 
   box-sizing: border-box;
   font-family: Inter, sans-serif;
@@ -23,4 +27,27 @@
 body {
   margin: 0;
   background-color: var(--color-main-bg);
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 30px;
+  color: var(--color-text-heading);
+}
+
+h2 {
+  font-size: 1rem;
+  line-height: 25px;
+  color: var(--color-text-heading-secondary);
+}
+
+.grid-12col {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 14px;
 }
