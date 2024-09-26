@@ -6,14 +6,22 @@
   --color-selection-hover: #75cabe;
   --color-outline: #e8e8e8;
   --color-border: #2c2d33;
+
   --color-text-heading: #fff;
   --color-text-heading-secondary: #84888c;
   --color-text-input: #d2d2d2;
   --color-text-name: #e8e8e8;
+  --color-text-dim: #87888c;
   --color-text-nav: rgb(135, 136, 140);
   --color-text-nav-inactive: rgb(135, 136, 140, 0.9);
+
   --color-search-bar-hover: #2c2d33;
   --color-notification-counter: #e61647;
+
+  --color-misc-orange: #fdb763;
+  --color-misc-crystal: #aadfd8;
+  --color-misc-blue: #24a6e3;
+  --color-misc-pink: #e0bcdd;
 
   box-sizing: border-box;
   font-family: Inter, sans-serif;
@@ -23,4 +31,38 @@
 body {
   margin: 0;
   background-color: var(--color-main-bg);
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 30px;
+  color: var(--color-text-heading);
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 25px;
+  color: var(--color-text-heading);
+}
+
+.invisible {
+  display: none;
+}
+
+.boxshadow-1px-black {
+  box-shadow: 0 1px 2px -1px #000;
+}
+
+.grid-12col {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 14px;
 }

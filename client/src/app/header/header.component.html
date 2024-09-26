@@ -1,21 +1,18 @@
-<div class="header-main">
-  <button appIconBtn>
-    <app-svg-icon name="hide-nav" width="1.2rem" height="1.2rem" />
-  </button>
-  <form>
-    <button>
-      <app-svg-icon name="search" width="0.75rem" height="0.75rem" />
+<div class="header-content-container grid-12col">
+  <div class="header-content-search">
+    <button appIconBtn>
+      <app-svg-icon name="hide-nav" width="1.2rem" height="1.2rem" />
     </button>
-    <input type="text" placeholder="Search anything..." />
-  </form>
-</div>
-<div class="header-aside">
-  <button appIconBtn>
-    <span class="counter">87</span>
-    <app-svg-icon name="bell" width="1.4rem" height="1.4rem" />
-  </button>
-  <div class="avatar-wrapper">
-    <img src="avatar.png" alt="avatar" />
+    <app-search placeholder="Search anything..."></app-search>
   </div>
-  <span class="profile-name">Somelong fuckingname fuckingname</span>
+  <div class="header-content-profile">
+    <button appIconBtn>
+      <span class="notification-counter">87</span>
+      <app-svg-icon name="bell" width="1.4rem" height="1.4rem" />
+    </button>
+    <div class="avatar-wrapper">
+      <img src="avatar.png" alt="avatar" />
+    </div>
+    <span class="profile-name">Somelong fuckingname fuckingname</span>
+  </div>
 </div>

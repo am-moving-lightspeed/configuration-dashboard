@@ -1,10 +1,29 @@
 :host {
+  position: relative;
   display: flex;
 
   width: 100%;
   height: 100%;
 }
 
-.main {
+.main-container {
   flex: 1 1 100%;
+}
+
+.main-container main {
+  padding: 21px;
+  padding-top: 0;
+}
+
+#main-content {
+  grid-column: span 8;
+}
+
+#additional-details {
+  position: sticky;
+  top: 116px;
+  right: 0;
+
+  grid-column: span 4;
+  height: min-content;
 }

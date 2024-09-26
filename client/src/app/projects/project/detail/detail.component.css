@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 20px;
+  height: 182px;
+
+  background-color: var(--color-main-bg);
+  border-radius: 16px;
+}
+
+h3,
+p {
+  margin: 0;
+}
+
+.detail-total-count,
+.detail-name {
+  color: var(--color-text-heading);
+}
+
+.detail-total-count {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+.detail-name {
+  margin-bottom: 8px;
+}
+
+.detail-misc {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
