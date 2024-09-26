@@ -1,4 +1,5 @@
 :host {
+  position: relative;
   display: flex;
 
   width: 100%;
@@ -9,8 +10,7 @@
   flex: 1 1 100%;
 }
 
-main {
-  margin-top: 116px;
+.main-container main {
   padding: 21px;
   padding-top: 0;
 }
