@@ -20,6 +20,10 @@
 }
 
 #additional-details {
+  position: sticky;
+  top: 116px;
+  right: 0;
+
   grid-column: span 4;
-  background-color: var(--color-main-fg);
+  height: min-content;
 }

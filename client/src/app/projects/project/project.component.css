@@ -1,15 +1,19 @@
 .project {
+  margin-bottom: 14px;
   padding: 32px;
   background-color: var(--color-main-fg);
   border-radius: 10px;
 }
 
-h1 {
+h2 {
   margin-bottom: 5px;
 }
 
-h2 {
+p {
   margin-bottom: 24px;
+  color: var(--color-text-heading-secondary);
+  line-height: 25px;
+  font-weight: 600;
 }
 
 .project-details {

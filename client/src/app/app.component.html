@@ -1,10 +1,13 @@
-<nav></nav>
+<nav appNav></nav>
 <div class="main-container">
   <header></header>
   <main class="grid-12col">
     <section id="main-content">
-      <app-projects />
+      <h2 class="invisible">Main content</h2> <!-- dynamic? -->
+      <app-projects></app-projects>
     </section>
-    <section id="additional-details"></section>
+    <aside id="additional-details">
+      <app-members-widget></app-members-widget>
+    </aside>
   </main>
 </div>
