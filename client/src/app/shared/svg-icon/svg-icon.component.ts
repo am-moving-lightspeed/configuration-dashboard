@@ -11,10 +11,12 @@ import { Component, computed, input } from '@angular/core';
   }
 })
 export class SvgIconComponent {
-  name = input.required<string>();
-  subPath = input('', { transform: subPath => (subPath ? `${subPath}/` : '') });
+  prefixedName = input.required<string>({ alias: 'name' });
   width = input('1rem');
   height = input('1rem');
 
-  path = computed(() => `/svg/${this.subPath()}${this.name()}.svg#${this.name()}`);
+  path = computed(() => {
+    const actualName = this.prefixedName().split('/').at(-1);
+    return `/svg/${this.prefixedName()}.svg#${actualName}`;
+  });
 }
