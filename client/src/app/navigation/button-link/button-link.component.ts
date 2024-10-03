@@ -14,6 +14,7 @@ import { NavigationOption } from '../navigation.model';
 export class ButtonLinkComponent {
   id = input.required<NavigationOption>();
   link = input.required<string>();
+  iconName = input.required<string>();
 
   selected = computed(() => this.navigationService.isSelected(this.id()));
 
