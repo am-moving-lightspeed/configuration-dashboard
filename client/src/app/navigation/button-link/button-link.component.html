@@ -1,4 +1,4 @@
 <a [href]="link()" [attr.selected]="selected() ? '' : null" (click)="select()">
-  <ng-content select="app-svg-icon" />
+  <app-svg-icon [name]="iconName()" />
   <span>{{ id() }}</span>
 </a>
