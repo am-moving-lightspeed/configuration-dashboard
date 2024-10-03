@@ -1,20 +1,19 @@
-<div class="logo-container">
-  <img src="logo.png" alt="logo" />
-</div>
-<ul>
-  <li>
-    <app-button-link id="Projects" link="#" iconName="members"></app-button-link>
-  </li>
-  <li>
-    <app-button-link id="Configurations" link="#" iconName="members"></app-button-link>
-  </li>
-  <li>
-    <app-button-link id="Members" link="#" iconName="members"></app-button-link>
-  </li>
-  <li>
-    <app-button-link id="History" link="#" iconName="members"></app-button-link>
-  </li>
-  <li>
-    <app-button-link id="Settings" link="#" iconName="members"></app-button-link>
-  </li>
-</ul>
+<nav class="nav-container">
+  <div class="logo-container">
+    <a class="logo-link" href="#">
+      <img class="logo" src="logo.png" alt="logotype" />
+    </a>
+  </div>
+  <ul class="nav-options">
+    @for (option of availableOptions(); track option.id) {
+    <li class="nav-option">
+      <app-nav-option
+        link="#"
+        [id]="option.id"
+        [name]="option.name"
+        [iconName]="option.icon"
+      ></app-nav-option>
+    </li>
+    }
+  </ul>
+</nav>

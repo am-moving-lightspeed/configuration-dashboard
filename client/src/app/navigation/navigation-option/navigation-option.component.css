@@ -1,4 +1,4 @@
-a {
+.nav-option__link {
   display: flex;
   align-items: center;
   padding: 10px 16px;
@@ -8,25 +8,24 @@ a {
   border-radius: 6px;
 
   color: var(--color-text-nav);
-  fill-rule: evenodd;
   font-weight: 500;
   text-decoration: none;
-  transition: ease-out 0.2s background-color;
+  transition: ease-out 0.2s all;
 }
 
-a span {
+.nav-option__link > span {
   margin-left: 8px;
 }
 
-a:hover {
+.nav-option__link:hover {
   background-color: var(--color-main-hover);
 }
 
-a[selected] {
+.nav-option__link.selected {
   color: var(--color-main-bg);
   background-color: var(--color-selection);
 }
 
-a[selected]:hover {
+.nav-option__link.selected:hover {
   background-color: var(--color-selection-hover);
 }

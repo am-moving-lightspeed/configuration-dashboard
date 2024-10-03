@@ -1,16 +1,16 @@
 import { Injectable, signal } from '@angular/core';
 
-import { NavigationOption } from './navigation.model';
+import { NavigationOptionId } from './navigation.model';
 
 @Injectable({ providedIn: 'root' })
 export class NavigationService {
-  selectedNavOption = signal<NavigationOption>('Projects');
+  selectedNavOption = signal<NavigationOptionId>('projects');
 
-  isSelected(navOptionId: NavigationOption) {
+  isSelected(navOptionId: NavigationOptionId) {
     return this.selectedNavOption() === navOptionId;
   }
 
-  select(navOptionId: NavigationOption) {
+  select(navOptionId: NavigationOptionId) {
     this.selectedNavOption.set(navOptionId);
   }
 }

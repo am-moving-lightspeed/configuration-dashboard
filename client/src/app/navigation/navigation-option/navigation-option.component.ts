@@ -2,18 +2,18 @@ import { Component, computed, inject, input } from '@angular/core';
 
 import { SvgIconComponent } from '../../shared/svg-icon/svg-icon.component';
 import { NavigationService } from '../navigation.service';
-import { NavigationOption } from '../navigation.model';
+import { NavigationOptionId } from '../navigation.model';
 
 @Component({
-  selector: 'app-button-link',
+  selector: 'app-nav-option',
   standalone: true,
   imports: [SvgIconComponent],
-  templateUrl: './button-link.component.html',
-  styleUrl: './button-link.component.css'
+  templateUrl: './navigation-option.component.html',
+  styleUrl: './navigation-option.component.css'
 })
-export class ButtonLinkComponent {
-  id = input.required<NavigationOption>();
-  link = input.required<string>();
+export class NavigationOptionComponent {
+  id = input.required<NavigationOptionId>();
+  name = input.required<string>();
   iconName = input.required<string>();
 
   selected = computed(() => this.navigationService.isSelected(this.id()));
