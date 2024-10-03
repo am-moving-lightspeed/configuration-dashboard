@@ -7,23 +7,18 @@
 }
 
 .main-container {
-  flex: 1 1 100%;
+  flex-basis: 100%;
+  max-height: 100%;
 }
 
-.main-container main {
-  padding: 21px;
-  padding-top: 0;
+.main-container > * {
+  padding: 0 21px;
 }
 
-#main-content {
-  grid-column: span 8;
-}
-
-#additional-details {
+.aside-content {
   position: sticky;
   top: 116px;
   right: 0;
 
-  grid-column: span 4;
   height: min-content;
 }
