@@ -9,10 +9,15 @@
 .main-container {
   flex-basis: 100%;
   max-height: 100%;
+  overflow-y: auto;
 }
 
 .main-container > * {
   padding: 0 21px;
+}
+
+.page-content {
+  height: fit-content;
 }
 
 .aside-content {
