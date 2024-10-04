@@ -4,7 +4,7 @@
   left: 0;
 
   flex: 0 0 240px;
-  height: 100vh;
+  min-height: 100%;
 }
 
 .nav-container {

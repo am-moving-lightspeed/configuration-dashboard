@@ -5,7 +5,7 @@ import { IconButtonComponent } from '../shared/icon-button/icon-button.component
 import { SearchComponent } from "../shared/search/search.component";
 
 @Component({
-  selector: 'header',
+  selector: 'app-header',
   standalone: true,
   imports: [SvgIconComponent, IconButtonComponent, SearchComponent],
   templateUrl: './header.component.html',
