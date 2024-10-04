@@ -1,18 +1,11 @@
-<div class="project boxshadow-1px-black">
-  <h2>Projectname</h2>
-  <p>Some descripotion</p>
-  <div class="project-details">
-    <app-detail>
-      <app-svg-icon name="configurations" width="1.5rem" height="1.5rem" />
-    </app-detail>
-    <app-detail>
-      <app-svg-icon name="members" width="1.5rem" height="1.5rem" />
-    </app-detail>
-    <app-detail>
-      <app-svg-icon name="warning" width="1.5rem" height="1.5rem" />
-    </app-detail>
-    <app-detail>
-      <app-svg-icon name="warning" width="1.5rem" height="1.5rem" />
-    </app-detail>
-  </div>
+<div class="project shadow-1px-black">
+  <h2 class="project-heading">Projectname</h2>
+  <p class="project-description">Some descripotion</p>
+  <ul class="project-details">
+    @for (detail of availableProjectDetails(); track detail.type) {
+    <li>
+      <app-project-detail [iconName]="detail.iconName"></app-project-detail>
+    </li>
+    }
+  </ul>
 </div>

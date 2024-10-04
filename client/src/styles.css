@@ -63,3 +63,7 @@ h2 {
 .common-grid-container__aside {
   grid-column: span 4;
 }
+
+.shadow-1px-black {
+  box-shadow: 0 1px 2px -1px #000;
+}

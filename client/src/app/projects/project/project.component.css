@@ -5,11 +5,11 @@
   border-radius: 10px;
 }
 
-h2 {
+.project-heading {
   margin-bottom: 5px;
 }
 
-p {
+.project-description {
   margin-bottom: 24px;
   color: var(--color-text-heading-secondary);
   line-height: 25px;
