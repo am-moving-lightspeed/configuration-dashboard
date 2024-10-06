@@ -1,0 +1,24 @@
+<form class="login-form common-content-block" action="#">
+  <h1 class="login-form__heading">Sign-in</h1>
+  <app-input
+    [params]="{
+      id: 'username',
+      type: 'text',
+      label: 'Username / e-mail',
+      placeholder: 'Username'
+    }"
+  ></app-input>
+  <app-input
+    [params]="{
+      id: 'password',
+      type: 'text'
+    }"
+  ></app-input>
+  <footer class="login-form__footer">
+    <p class="login-form__sign-up">
+      Do not have an account yet?<br />
+      <a class="login-form__sign-up-link" href="#">Sign up</a>
+    </p>
+    <button class="login-form__submit">Proceed</button>
+  </footer>
+</form>

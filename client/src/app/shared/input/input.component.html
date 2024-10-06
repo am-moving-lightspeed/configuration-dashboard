@@ -1,0 +1,4 @@
+<label class="input-label" [class.invisible]="!showLabel()" [for]="params().id">{{ labelText() }}</label>
+<div class="input-container">
+  <input class="input" [id]="params().id" [type]="params().type" [placeholder]="placeholderText()" />
+</div>

@@ -7,21 +7,34 @@
   --color-outline: #e8e8e8;
   --color-border: #2c2d33;
 
-  --color-text-heading: #fff;
   --color-text-heading-secondary: #84888c;
-  --color-text-input: #d2d2d2;
   --color-text-name: #e8e8e8;
   --color-text-dim: #87888c;
   --color-text-nav: rgb(135, 136, 140);
   --color-text-nav-inactive: rgb(135, 136, 140, 0.9);
 
-  --color-search-bar-hover: #2c2d33;
   --color-notification-counter: #e61647;
 
   --color-misc-orange: #fdb763;
   --color-misc-crystal: #aadfd8;
   --color-misc-blue: #24a6e3;
   --color-misc-pink: #e0bcdd;
+
+  /* TODO: refactor above */
+  --color-misc-crystal: #aadfd8;
+  --color-misc-crystal--dark: #75cabe;
+
+  --color-text-default: #e8e8e8;
+  --color-text-dark: #171821; /* --color-main-bg */
+  --color-text-heading: #fff;
+  --color-text-input: #d2d2d2;
+  --color-text-link: var(--color-misc-crystal);
+  --color-text-link--hover: var(--color-misc-crystal--dark);
+
+  --color-input-dark: #1c1d27; /* --color-main-hover */
+  --color-input-dark--hover: #171821; /* --color-main-bg */
+  --color-input-light: #21222d; /* --color-main-fg */
+  --color-input-light--hover: #2c2d33;
 
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -64,6 +77,12 @@ h2 {
   grid-column: span 4;
 }
 
-.shadow-1px-black {
+/* Common content block styles */
+.common-content-block {
+  margin-bottom: 14px;
+  padding: 32px;
+
+  background-color: var(--color-main-fg);
+  border-radius: 10px;
   box-shadow: 0 1px 2px -1px #000;
 }
