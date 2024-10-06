@@ -7,6 +7,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SearchComponent } from './shared/search/search.component';
 import { MembersWidgetComponent } from './shared/members-widget/members-widget.component';
 import { LoginComponent } from './auth/login/login.component';
+import { RegistrationComponent } from "./auth/registration/registration.component";
 
 @Component({
   selector: 'app-root',
@@ -18,8 +19,9 @@ import { LoginComponent } from './auth/login/login.component';
     ProjectsComponent,
     SearchComponent,
     MembersWidgetComponent,
-    LoginComponent
-  ],
+    LoginComponent,
+    RegistrationComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

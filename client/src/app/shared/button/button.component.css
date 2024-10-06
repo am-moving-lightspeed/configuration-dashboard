@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+
+  height: 44px;
+  border: none;
+  border-radius: 6px;
+
+  color: var(--color-text-dark);
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  background-color: var(--color-misc-crystal);
+  box-shadow: 1px 1px 2px #000;
+
+  cursor: pointer;
+  transition: ease-out 0.2s all;
+}
+
+:host:hover {
+  background-color: var(--color-misc-crystal--dark);
+}

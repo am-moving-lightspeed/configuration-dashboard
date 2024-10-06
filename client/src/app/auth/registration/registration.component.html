@@ -1,0 +1,63 @@
+<form class="registration-form generic-form common-content-block" action="#">
+  <h1 class="registration-form__heading generic-form__heading">Sign-up</h1>
+  <div class="registration-form__input-container">
+    <app-input
+      [params]="{
+        id: 'username',
+        type: 'text'
+      }"
+    ></app-input>
+    <app-input
+      [params]="{
+        id: 'first-name',
+        type: 'text',
+        label: 'First name'
+      }"
+    ></app-input>
+    <app-input
+      [params]="{
+        id: 'e-mail',
+        type: 'text'
+      }"
+    ></app-input>
+    <app-input
+      [params]="{
+        id: 'last-name',
+        type: 'text',
+        label: 'Last name'
+      }"
+    ></app-input>
+    <app-input
+      [params]="{
+        id: 'password',
+        type: 'text'
+      }"
+    ></app-input>
+    <div class="registration-form__avatar-selection-container">
+      <div class="registration-form__avatar">
+        <img src="avatar.png" alt="Selected avatar" />
+      </div>
+      <p class="registration-form__avatar-selection generic-form__hint">
+        <a class="registration-form__avatar-selection-link generic-form__hint-link" href="#">
+          <app-svg-icon name="forms/upload" width="0.85rem" height="0.85rem"></app-svg-icon>
+          <span>Select avatar</span>
+        </a>
+        from device
+      </p>
+    </div>
+    <app-input
+      [params]="{
+        id: 'confirm-password',
+        type: 'text',
+        label: 'Confirm password'
+      }"
+    ></app-input>
+  </div>
+  <footer class="registration-form__footer generic-form__footer">
+    <p class="registration-form__sign-up generic-form__hint">
+      Already have an account?<br />
+      <a class="registration-form__sign-up-link generic-form__hint-link" href="#">Sign in</a>
+    </p>
+    <button appButton>Proceed</button>
+  </footer>
+</form>

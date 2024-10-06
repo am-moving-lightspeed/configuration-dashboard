@@ -1,5 +1,8 @@
-:host:not(:last-child) {
+:host {
   display: block;
+}
+
+:host:not(:last-child) {
   margin-bottom: 25px;
 }
 
