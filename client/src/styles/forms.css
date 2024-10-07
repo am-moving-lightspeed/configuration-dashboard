@@ -1,0 +1,33 @@
+.generic-form {
+  background-color: var(--color-main-fg);
+}
+
+.generic-form__heading {
+  margin-bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.generic-form__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+
+  padding-left: 10px;
+  width: 100%;
+}
+
+.generic-form__hint {
+  color: var(--color-text-default);
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+}
+
+.generic-form__hint-link {
+  font-weight: 500;
+  color: var(--color-text-link);
+}
+
+.generic-form__hint-link:hover {
+  color: var(--color-text-link--hover);
+}

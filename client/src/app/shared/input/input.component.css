@@ -1,0 +1,58 @@
+:host {
+  display: block;
+}
+
+:host:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.input-label {
+  display: inline-block;
+  margin: 0 0 10px 10px;
+  color: var(--color-text-default);
+}
+
+.input-container {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 52px;
+
+  border-radius: 8px;
+  background-color: var(--color-input-dark);
+  box-shadow: inset 1px 1px var(--color-input-dark--hover);
+
+  cursor: text;
+  transition: ease-out 0.2s background-color;
+}
+
+.input-container:hover,
+.input-container:focus-within {
+  background-color: var(--color-input-dark--hover);
+}
+
+.input-container.light {
+  background-color: var(--color-input-light);
+}
+
+.input-container.light:hover,
+.input-container.light:focus-within {
+  background-color: var(--color-input-light--hover);
+}
+
+.input {
+  flex: 1 1 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text-input);
+
+  border: none;
+  outline: none; /* TODO: make outline on parent block */
+  background-color: transparent;
+}
+
+.input::placeholder {
+  font-style: italic;
+}

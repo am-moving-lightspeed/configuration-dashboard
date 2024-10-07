@@ -27,8 +27,9 @@
               }
             ],
             "styles": [
-              "src/reset.css",
-              "src/styles.css"
+              "src/styles/reset.css",
+              "src/styles/styles.css",
+              "src/styles/forms.css"
             ],
             "scripts": []
           },
