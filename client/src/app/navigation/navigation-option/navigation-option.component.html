@@ -1,4 +1,4 @@
-<a class="nav-option__link" href="#" [class.selected]="selected()" (click)="select()">
+<a class="nav-option__link" [routerLink]="link()" routerLinkActive="selected">
   <app-svg-icon [name]="iconName()" />
   <span>{{ name() }}</span>
 </a>

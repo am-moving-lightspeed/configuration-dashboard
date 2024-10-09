@@ -6,7 +6,7 @@ import { routes as dashboardRoutes } from './dashboard/dashboard.routes';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: 'dashboard',
     pathMatch: 'full'
   },
   ...authRoutes,

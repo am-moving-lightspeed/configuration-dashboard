@@ -1,6 +1,6 @@
 <nav class="nav-container">
   <div class="logo-container">
-    <a class="logo-link" href="#">
+    <a class="logo-link" routerLink="/">
       <img class="logo" src="logo.png" alt="logotype" />
     </a>
   </div>
@@ -8,10 +8,10 @@
     @for (option of availableOptions(); track option.id) {
     <li class="nav-option">
       <app-nav-option
-        link="#"
         [id]="option.id"
         [name]="option.name"
         [iconName]="option.icon"
+        [link]="option.link"
       ></app-nav-option>
     </li>
     }

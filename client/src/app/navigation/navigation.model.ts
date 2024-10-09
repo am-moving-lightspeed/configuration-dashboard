@@ -10,32 +10,38 @@ export interface NavigationOption {
   id: NavigationOptionId;
   name: string;
   icon: string;
+  link: string;
 }
 
-export const NAVIGATION_OPTIONS: NavigationOption[] = [
+export const navigationOptions: NavigationOption[] = [
   {
     id: 'projects',
     name: 'Projects',
-    icon: 'nav/projects'
+    icon: 'nav/projects',
+    link: '/projects'
   },
   {
     id: 'configurations',
     name: 'Configurations',
-    icon: 'shared/configurations'
+    icon: 'shared/configurations',
+    link: '/configurations'
   },
   {
     id: 'members',
     name: 'Members',
-    icon: 'shared/members'
+    icon: 'shared/members',
+    link: '/members'
   },
   {
     id: 'history',
     name: 'History',
-    icon: 'nav/history'
+    icon: 'nav/history',
+    link: '/history'
   },
   {
     id: 'settings',
     name: 'Settings',
-    icon: 'nav/settings'
+    icon: 'nav/settings',
+    link: '/settings'
   }
 ];

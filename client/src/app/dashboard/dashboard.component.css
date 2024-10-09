@@ -7,16 +7,13 @@
 }
 
 .main-container {
-  flex-basis: 100%;
+  flex: 1 1 100%;
   max-height: 100%;
   overflow-y: auto;
 }
 
-.main-container > * {
-  padding: 0 21px;
-}
-
 .page-content {
+  padding: 0 21px;
   height: fit-content;
 }
 

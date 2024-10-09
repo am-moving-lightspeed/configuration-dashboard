@@ -1,13 +1,7 @@
 <app-nav></app-nav>
 <div class="main-container">
   <app-header></app-header>
-  <main class="page-content common-grid-container">
-    <section class="main-content common-grid-container__main">
-      <h2 class="invisible">Main content</h2>
-      <app-projects></app-projects>
-    </section>
-    <aside class="aside-content common-grid-container__aside">
-      <!-- <app-members-widget></app-members-widget> -->
-    </aside>
+  <main class="page-content">
+    <router-outlet></router-outlet>
   </main>
 </div>
